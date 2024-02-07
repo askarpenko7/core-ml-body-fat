@@ -23,7 +23,19 @@
 		3D5CFCAB2B72F9F900E96DDB /* MarkerMetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CFCAA2B72F9F900E96DDB /* MarkerMetricView.swift */; };
 		3D5CFCAD2B72FA6200E96DDB /* MetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CFCAC2B72FA6200E96DDB /* MetricView.swift */; };
 		3D5CFCAF2B72FA8400E96DDB /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CFCAE2B72FA8400E96DDB /* WeightView.swift */; };
+		3DFC602F2B73DD23008956E6 /* CoreMLBodyFatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC602E2B73DD23008956E6 /* CoreMLBodyFatUITests.swift */; };
+		3DFC60312B73DD23008956E6 /* CoreMLBodyFatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC60302B73DD23008956E6 /* CoreMLBodyFatUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DFC60322B73DD23008956E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D5CFC7B2B72EFE700E96DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D5CFC822B72EFE700E96DDB;
+			remoteInfo = "CoreML Body Fat";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3D5CFC832B72EFE700E96DDB /* CoreML Body Fat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML Body Fat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +55,20 @@
 		3D5CFCAA2B72F9F900E96DDB /* MarkerMetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerMetricView.swift; sourceTree = "<group>"; };
 		3D5CFCAC2B72FA6200E96DDB /* MetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricView.swift; sourceTree = "<group>"; };
 		3D5CFCAE2B72FA8400E96DDB /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		3DFC602C2B73DD23008956E6 /* CoreMLBodyFatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLBodyFatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DFC602E2B73DD23008956E6 /* CoreMLBodyFatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLBodyFatUITests.swift; sourceTree = "<group>"; };
+		3DFC60302B73DD23008956E6 /* CoreMLBodyFatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLBodyFatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D5CFC802B72EFE700E96DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFC60292B73DD23008956E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5CFC852B72EFE700E96DDB /* CoreMLBodyFat */,
+				3DFC602D2B73DD23008956E6 /* CoreMLBodyFatUITests */,
 				3D5CFC842B72EFE700E96DDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5CFC832B72EFE700E96DDB /* CoreML Body Fat.app */,
+				3DFC602C2B73DD23008956E6 /* CoreMLBodyFatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +119,15 @@
 			path = CoreMLBodyFat;
 			sourceTree = "<group>";
 		};
+		3DFC602D2B73DD23008956E6 /* CoreMLBodyFatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DFC602E2B73DD23008956E6 /* CoreMLBodyFatUITests.swift */,
+				3DFC60302B73DD23008956E6 /* CoreMLBodyFatUITestsLaunchTests.swift */,
+			);
+			path = CoreMLBodyFatUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +148,24 @@
 			productReference = 3D5CFC832B72EFE700E96DDB /* CoreML Body Fat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3DFC602B2B73DD23008956E6 /* CoreMLBodyFatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DFC60342B73DD23008956E6 /* Build configuration list for PBXNativeTarget "CoreMLBodyFatUITests" */;
+			buildPhases = (
+				3DFC60282B73DD23008956E6 /* Sources */,
+				3DFC60292B73DD23008956E6 /* Frameworks */,
+				3DFC602A2B73DD23008956E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DFC60332B73DD23008956E6 /* PBXTargetDependency */,
+			);
+			name = CoreMLBodyFatUITests;
+			productName = CoreMLBodyFatUITests;
+			productReference = 3DFC602C2B73DD23008956E6 /* CoreMLBodyFatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +178,10 @@
 				TargetAttributes = {
 					3D5CFC822B72EFE700E96DDB = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					3DFC602B2B73DD23008956E6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3D5CFC822B72EFE700E96DDB;
 					};
 				};
 			};
@@ -144,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				3D5CFC822B72EFE700E96DDB /* CoreML Body Fat */,
+				3DFC602B2B73DD23008956E6 /* CoreMLBodyFatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5CFC8B2B72EFE800E96DDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFC602A2B73DD23008956E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +245,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DFC60282B73DD23008956E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFC60312B73DD23008956E6 /* CoreMLBodyFatUITestsLaunchTests.swift in Sources */,
+				3DFC602F2B73DD23008956E6 /* CoreMLBodyFatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DFC60332B73DD23008956E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D5CFC822B72EFE700E96DDB /* CoreML Body Fat */;
+			targetProxy = 3DFC60322B73DD23008956E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3D5CFC8F2B72EFE800E96DDB /* Debug */ = {
@@ -364,6 +444,46 @@
 			};
 			name = Release;
 		};
+		3DFC60352B73DD23008956E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PZDUPSM9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.CoreMLBodyFatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = "CoreML Body Fat";
+			};
+			name = Debug;
+		};
+		3DFC60362B73DD23008956E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PZDUPSM9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.CoreMLBodyFatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = "CoreML Body Fat";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -381,6 +501,15 @@
 			buildConfigurations = (
 				3D5CFC922B72EFE800E96DDB /* Debug */,
 				3D5CFC932B72EFE800E96DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DFC60342B73DD23008956E6 /* Build configuration list for PBXNativeTarget "CoreMLBodyFatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DFC60352B73DD23008956E6 /* Debug */,
+				3DFC60362B73DD23008956E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
