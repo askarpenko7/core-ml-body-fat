@@ -36,7 +36,7 @@ struct FloatingInputView: View {
                     .background(Color.white)
                     .keyboardType(.decimalPad)
                     .onChange(of: inputText) { _, newValue in
-                        isInputValid = isValidInput(newValue, for: focusedField)
+                        isInputValid = validateInput(newValue, for: focusedField)
                     }
 
                 Button("Submit") {
@@ -57,6 +57,7 @@ struct FloatingInputView: View {
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 10)
+        .environment(\.colorScheme, .light)
         .onDisappear {
             focusedField = nil
             resetInput()
@@ -66,20 +67,23 @@ struct FloatingInputView: View {
         }
     }
 
-    private func isValidInput(_ input: String, for field: MetricsField?) -> Bool {
+    private func validateInput(_ input: String, for field: MetricsField?) -> Bool {
         guard let field = field else { return false }
+        let normalizedInput = input.replacingOccurrences(of: ",", with: ".")
+        inputText = normalizedInput
         switch field {
         case .age:
-            let input = Int(input)
+            let input = Int(normalizedInput)
             return input != nil && input ?? 0 > 17 && input ?? 0 < 100
         default:
-            let input = Double(input)
+            let input = Double(normalizedInput)
             return input != nil && input ?? 0 > 0 && input ?? 0 < 1000
         }
     }
 
     private func resetInput() {
         isInputValid = true
+        inputText = ""
     }
 }
 

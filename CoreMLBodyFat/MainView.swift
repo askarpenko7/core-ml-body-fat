@@ -53,6 +53,7 @@ struct MainView: View {
         .scrollDisabled(!showFloatingInput)
         .scrollPosition(id: $scrollPosition, anchor: .center)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .environment(\.colorScheme, .light)
         .background(
             backgroundView
         )
