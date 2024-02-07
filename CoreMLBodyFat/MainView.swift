@@ -115,7 +115,6 @@ struct MainView: View {
                 MetricView(value: $viewModel.age, field: .age) { field in
                     triggerInput(for: field)
                 }
-                .id(MetricsField.age)
                 .offset(x: 135)
             }
         }

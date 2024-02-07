@@ -28,7 +28,6 @@ struct WeightView: View {
                 }
             })
         })
-        .id(MetricsField.weight)
     }
 
     private func calculateMarkHeight(for index: Int) -> CGFloat {

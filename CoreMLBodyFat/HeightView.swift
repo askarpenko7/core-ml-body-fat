@@ -32,7 +32,6 @@ struct HeightView: View {
                     )
             }
         }
-        .id(MetricsField.height)
     }
 }
 
